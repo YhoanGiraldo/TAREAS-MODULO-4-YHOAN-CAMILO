@@ -1,0 +1,40 @@
+
+.titulo{
+width: 1080px;
+background-color: rgb(91, 52, 183);
+text-align: center;
+padding: 10px;
+border-radius: 50%;
+font-size: 20px;
+margin: 50px;
+}
+
+.descripcion{
+    text-align: center;
+    background-color: red;
+    font-size: 35px;
+    width: 1000px;
+    padding: 50px;
+    margin: 50px;
+
+}
+
+#fotoDeadPool{
+    width: 500px;
+    height: auto;
+}
+
+.descripcion2{
+    text-align: center;
+    background-color: yellow;
+    font-size: 35px;
+    width: 1000px;
+    padding: 50px;
+    margin: 50px;
+
+}
+
+#fotoSimpson{
+    width: 500px;
+    height: auto;
+}
