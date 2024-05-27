@@ -1,55 +1,30 @@
-
 import './App.css'
+import deadpool from "./assets/deadpool2.jpg"
+import simpson from "./assets/simpson.jpg"
+import Title from './components/Title'
+import Image from './components/Image'
+import Details from './components/Details'
+
+
 
 function App() {
  
 
   return (
-    <>
+    <div className='contenedorMayor'>
+
+      <Image  url={deadpool}/>
+      
+
       <div className='titulo'>
-        <h1>
-          
-          MIS 2 PELICULAS MAS VISTAS
-        
-        </h1>
+        <Title title="Deadpool"/>
       </div>
 
-      <div className='descripcion'>
-
-        <h2>DEADPOOL</h2>
-
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Deadpool%2C_Georgia_Viaduct%2C_Vancouver%2C_April_6_2015_-_3.jpg" 
-        id='fotoDeadPool' />
-        <p>
-
-          La película sigue a Wade Wilson, un mercenario con un retorcido 
-          sentido del humor que después de ser sometido a un experimento que 
-          lo deja con deformaciones físicas y nuevas habilidades mutantes de regeneración, 
-          persigue al hombre que casi destrozó su vida.
-        
-        </p>
+      <div className='detalles'>
+        <Details genre=" Niños +12" status="Artista vivo" />
       </div>
-
-
-      <div className='descripcion2'>
-
-        <h2>LOS SIMPSON</h2>
-
-        <img src="https://pics.filmaffinity.com/Los_Simpson_La_pelaicula-460718654-large.jpg" 
-        id='fotoSimpson' />
-
-
-        <p>
-
-        Homer debe salvar al mundo de una catástrofe que él mismo ha provocado. 
-        Todo comienza con Homer, su nueva mascota, un cerdo, y un silo lleno de 
-        excrementos que tiene una fuga, una combinación que desencadena un desastre 
-        distinto a todo lo que Springfield haya experimentado jamás.
-        
-        </p>
-      </div>
-     
-    </>
+      
+    </div>
   )
 }
 

@@ -1,40 +1,27 @@
+.contenedorMayor{
+    border: 2px solid black;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    background-color: red
+    
+}
 
 .titulo{
-width: 1080px;
-background-color: rgb(91, 52, 183);
-text-align: center;
-padding: 10px;
-border-radius: 50%;
-font-size: 20px;
-margin: 50px;
+
+    border-radius: 100px;
+    background-color: rgb(172, 234, 65);
+    width: 200px;
+    margin: auto;
+    margin-top: 30px
+      
 }
 
-.descripcion{
-    text-align: center;
-    background-color: red;
-    font-size: 35px;
-    width: 1000px;
-    padding: 50px;
-    margin: 50px;
 
-}
 
-#fotoDeadPool{
-    width: 500px;
-    height: auto;
-}
 
-.descripcion2{
-    text-align: center;
-    background-color: yellow;
-    font-size: 35px;
-    width: 1000px;
-    padding: 50px;
-    margin: 50px;
-
-}
-
-#fotoSimpson{
-    width: 500px;
-    height: auto;
+.detalles{
+    margin-top: -22px;
+    border: 1px solid black;
+    background-color:  rgb(172, 234, 65);
 }
