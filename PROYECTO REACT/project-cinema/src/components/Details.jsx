@@ -6,7 +6,7 @@ function Details(props) {
   // Recuerda que este es solo un componente funcional, 
   // tu debes incluir estilos para hacerlo más atractivo
   return (
-    <div>
+    <div className='detallesTexto'>
         <p>
           <b>Genero:</b> {props.genre}
         </p>

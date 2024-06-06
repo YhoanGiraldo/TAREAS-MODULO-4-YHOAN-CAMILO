@@ -1,27 +1,44 @@
 .contenedorMayor{
+
     border: 2px solid black;
+    border-radius: 15%;
+    margin: auto;
     padding: 10px;
-    width: 250px;
+    width: 400px;
     text-align: center;
-    background-color: red
+    background-color: rgb(126, 118, 118)
     
 }
 
-.titulo{
+.imagen{
 
-    border-radius: 100px;
+    width: auto;
+}
+
+.coloresNombres{
+
+    border-radius: 200px;
     background-color: rgb(172, 234, 65);
-    width: 200px;
+    width: 300px;
     margin: auto;
-    margin-top: 30px
-      
+    margin-bottom: 20px;
+       
 }
 
 
+.detallesTexto{
 
-
-.detalles{
-    margin-top: -22px;
+    margin-top: 20px;
+    width: 200px;
+    margin: auto;
     border: 1px solid black;
     background-color:  rgb(172, 234, 65);
+    font-size: 20px;
+    
+}
+
+.botones{
+
+    margin: 50px;
+    text-align: center;
 }
