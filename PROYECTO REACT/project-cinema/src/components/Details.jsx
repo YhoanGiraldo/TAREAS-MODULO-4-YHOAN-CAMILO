@@ -8,7 +8,7 @@ function Details(props) {
   return (
     <div className='detallesTexto'>
         <p>
-          <b>Genero:</b> {props.genre}
+          <b>Genero:</b> {props.gender}
         </p>
         <p>
           <b>Estado:</b> {props.status}

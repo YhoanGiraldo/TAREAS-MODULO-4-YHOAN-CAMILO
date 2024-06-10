@@ -13,7 +13,7 @@ function CharacterCard(props) {
       <Image url={props.image} />
       {/* Detalles de el personaje */}
       <Details 
-        genre={props.genre} 
+        gender={props.gender} 
         status={props.status} 
       />
     </div>
