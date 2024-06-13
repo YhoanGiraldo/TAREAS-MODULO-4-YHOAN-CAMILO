@@ -3,7 +3,6 @@
 import React from 'react'
 import './App.css'
 import CharacterCard from './components/CharacterCard';
-import ricky from "./assets/rickAndMorty.png"
 import {useState, useEffect} from 'react'
 
 
@@ -12,7 +11,6 @@ import {useState, useEffect} from 'react'
 function App() {
 
 const [CharactersList, setCharactersList] = useState([]);
-
 const [toque, setToques] = useState(1);
 
 useEffect(() => {
@@ -38,18 +36,57 @@ let decrementoId =() =>{
   }else{
     setToques(toque - 1);
   }
+}
+
+  //-----------(Lo anterior es el listado completo por paginas de los personajes)----------------
+
+
+  const [nameFilter, setNameFilter] = useState("")
+  const [genderFilter, setGenderFilter] = useState("")
+
+  
+  const onSearch = (e) => {
+
+    e.preventDefault()
+    
+    
+    console.log(nameFilter)
+    console.log(genderFilter)
+
+
+    let urlAppi = "https://rickandmortyapi.com/api/character/?"
+
+    if (nameFilter) urlAppi += `name=${nameFilter}&`;
+
+    if(genderFilter) urlAppi += `gender=${genderFilter}&`
+
+    urlAppi = urlAppi.slice(0, -1);
+
+    fetch(urlAppi)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data)
+      setCharactersList(data.results);
+      
+    })
+
+
+
+    
+
+    setCharactersList([]);
+
+  }
+  
+    
+  
 
 
 
 
 
 
-
-
-
-
-
-
+  
 
 
 
@@ -96,7 +133,7 @@ let decrementoId =() =>{
 //____________________________________________________________________(TAREA DE 1 PERSONAJE)______________________________________________
 */
 
-}
+
  
   
   return (
@@ -105,6 +142,36 @@ let decrementoId =() =>{
 
   <div>
     <h1 className='titulo'>Personajes RICK AND MORTY</h1>
+
+    
+      <form onSubmit={onSearch}>
+
+        <label> BUSQUEDA POR NOMBRE</label>
+        <input   type="text"  value={nameFilter}   onChange={(e) =>  setNameFilter(e.target.value)} />
+
+        <label> SELECCIONA GENERO</label>
+        <select value={genderFilter} onChange={(e) => setGenderFilter(e.target.value) }>
+
+          <option value=" "> NINGUNO </option>
+          <option value="unknown"> UNKNOWN </option>
+          <option value="male"> MALE </option>
+          <option value="female"> FEMALE </option>
+
+        </select>
+
+        <button className='botonBuscar'  type='submit'>BUSCAR</button>
+
+
+      </form> 
+      
+      
+
+
+
+
+
+
+
 
     <div className='display'>
       {
@@ -131,8 +198,8 @@ let decrementoId =() =>{
   </div>
   <div className='botones'>
 
-        <button onClick={decrementoId}> ANTERIOR</button>
-        <button onClick={contadorId}>SIGUIENTE</button>
+        <button className='adelanteAtras'  onClick={decrementoId}> ANTERIOR</button>
+        <button  className='adelanteAtras' onClick={contadorId}>SIGUIENTE</button>
         
       </div>
 

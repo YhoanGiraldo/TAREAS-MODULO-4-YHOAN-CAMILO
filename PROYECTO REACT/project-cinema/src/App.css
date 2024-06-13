@@ -48,7 +48,7 @@ body{
     font-size: 20px;
 }
 
-button{
+.adelanteAtras{
     width: 200px;
     height: 50px;
     margin: auto;
@@ -58,4 +58,19 @@ button{
 .titulo{
     text-align: center;
     color: red;
+}
+
+label{
+    color:  rgb(168, 200, 108);
+    margin: 30px;
+}
+
+.botonBuscar{
+    background-color:rgb(168, 200, 108) ;
+    height: 30px;
+    margin:30px ;
+}
+
+form{
+    text-align: center;
 }
