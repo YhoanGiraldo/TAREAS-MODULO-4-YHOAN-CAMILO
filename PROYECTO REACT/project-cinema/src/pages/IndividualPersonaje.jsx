@@ -71,9 +71,9 @@ function IndividualPersonaje (){
                 status={status}
 
               />
-            </div>
+          </div>
 
-            <div className='informacionPersonaje'>
+          <div className='informacionPersonaje'>
 
                 <InformacionPersonaje 
                 
@@ -84,7 +84,7 @@ function IndividualPersonaje (){
                 
                 />
             </div>
-        </div>
+          </div>
 
             
 

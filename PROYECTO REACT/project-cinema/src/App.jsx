@@ -25,16 +25,16 @@ function App() {
 
       <div className='ubicacion_botones'>
         <nav>
-          <div className='botones'>
+          <div className='botonesP'>
               <Link to="/" > INICIO </Link>
           </div>
-          <div  className='botones'>
+          <div  className='botonesP'>
               <Link to="/lista" > LISTA y FILTRO</Link>
           </div>
-          <div className='botones'>
+          <div className='botonesP'>
               <Link to="/PersonIndividual" >PERSONAJE INDIVIDUAL</Link>
           </div>
-          <div className='botones'>
+          <div className='botonesP'>
               <Link to="/capitulos" > CAPITULOS</Link>
           </div>
         </nav>

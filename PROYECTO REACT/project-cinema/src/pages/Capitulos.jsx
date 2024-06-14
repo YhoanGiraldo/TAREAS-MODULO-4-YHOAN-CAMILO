@@ -8,7 +8,7 @@ import DetallesCapitulos from '../components/DetallesCapitulos';
 function Capitulos (){
 
     const [capitulos, setCapitulos] = useState([]);
-    let [toque , setToques] = useState(2);
+    let [toque , setToques] = useState(0);
 
     useEffect(() =>{
 
@@ -25,7 +25,12 @@ function Capitulos (){
     }, [toque])
 
     let contadorId =() =>{
+
+      if(toque >= 3){
+        toque = 3
+      }else{
         setToques(toque + 1)
+      }
       };
       
       let decrementoId =() =>{

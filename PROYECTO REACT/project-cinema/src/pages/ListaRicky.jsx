@@ -39,9 +39,7 @@ let decrementoId =() =>{
   }
 }
 
-  //-----------(Lo anterior es el listado completo por paginas de los personajes)----------------
-
-
+ 
   const [nameFilter, setNameFilter] = useState("")
   const [genderFilter, setGenderFilter] = useState("")
 
@@ -71,79 +69,13 @@ let decrementoId =() =>{
       
     })
 
-
-
-    
-
-    
-
   }
   
-    
-  
 
 
-
-
-
-
-  
-
-
-
-
-/*
-//____________________________________________________________________(TAREA DE 1 PERSONAJE)____________________________________________
-  const [name, setName] = useState("");
-  const [image, setImage] = useState("");
-  const [gender, setGender] = useState("");
-  const [status, setStatus] = useState("");
-
-  const [resultadoAppi, setResultadoAppi] = useState ("")
-
-  let [toque, setToques] = useState(1)
-  
-    useEffect( () => {
-      // Este useEffect se ejecutará una única vez cuando el componente se monte
-      fetch(`https://rickandmortyapi.com/api/character/${toque}`)
-
-      .then((response) => response.json())
-      .then((result) =>{
-
-        setResultadoAppi(result)
-         setName(result.name)
-         setImage(result.image)
-         setGender(result.gender)
-         setStatus(result.status)
-         console.log(result)
-      }
-      );
-  }, [toque]);
-
-  let contadorId =() =>{
-    setToques(toque + 1)
-  };
-
-  let decrementoId =() =>{
-    if(toque <= 0){
-      setToques(toque = 1);
-    }else{
-      setToques(toque - 1);
-    }
-  };
-//____________________________________________________________________(TAREA DE 1 PERSONAJE)______________________________________________
-*/
-
-
- 
-  
   return (
-    <>
-      
-
-
-
-        <div>
+    <> 
+      <div>
           <h1 className='titulo'>Personajes RICK AND MORTY</h1>
 
           
@@ -212,42 +144,7 @@ let decrementoId =() =>{
          </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        {/* //________________________(TAREA DE 1 PERSONAJE)_______________________
-          <>
-            <div className='contenedorMayor'>
-              <h1>Personajes de Rick and morty</h1>
-              
-              <CharacterCard 
-              
-                name={resultadoAppi.name}
-                image={resultadoAppi.image}
-                gender={resultadoAppi.gender}
-                status={resultadoAppi.status}
-              />
-            </div>
-
-            <div className='botones'>
-
-              <button onClick={decrementoId}> ANTERIOR</button>
-              <button onClick={contadorId}>SIGUIENTE</button>
-              
-            </div>
-          </>
-            //________________________(TAREA DE 1 PERSONAJE)_______________________
-        */}
+      
     </>
    
     
